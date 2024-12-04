@@ -19,6 +19,269 @@
   display: block;
 }
 
+.featured .columns.block > div {
+  display: flex;
+  background-color: #ebebeb;
+}
+
+.featured .columns.block > div div.columns-img-col {
+  flex-basis: 65%;
+  align-self: stretch;
+  display: flex;
+}
+
+.featured .columns.block > div div.columns-img-col div{
+  align-self: stretch;
+}
+
+.featured .columns.block > div div.columns-img-col img{
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured .columns.block > div div:last-child{
+  flex-basis: 35%;
+  padding: 3.5em 2em 2em;
+}
+
+.featured .columns.block > div div:last-child h2{
+  font-weight: normal;
+}
+
+.featured .columns.block > div div p:first-child{
+  font-weight: 600;
+}
+
+.featured .columns.block > div div p{
+  font-size: 14px;
+}
+
+.magazine-details .columns-wrapper .columns div {
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child {
+  flex: 3;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child h4{
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-weight: var(--fontWeightBold, 600);
+  text-transform: uppercase;
+  font-size: var(--body-font-size-s);
+  margin: 20px 0;
+}
+
+/* 
+.magazine-details .columns-wrapper .columns div > div:first-child table td {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .magazine-details .columns-wrapper .columns div > div:first-child table td h2::after{
+
+} */
+
+.magazine-details .columns-wrapper .columns div > div:first-child p {
+  font-size: 18px;
+    line-height: 2.5;
+    margin: 0 0 13.5px;
+    text-align: justify;
+  }
+
+  .magazine-details .columns-wrapper .columns div > div:first-child h2:not(:nth-child(1))::after{
+    border-bottom: 2px solid var(--brandPrimary, #ffea00);
+    content: "";
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 12px;
+    width: 84px;
+  }
+  
+/* .magazine-details .columns-wrapper .columns div > div:first-child p:nth-of-type(3) {
+  line-height: 0.5;
+} */
+.magazine-details .columns-wrapper .columns div > div:first-child p strong{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child hr {
+  height: 1px;
+  content: " ";
+  background-color: #ebebeb;
+  border: none;
+  margin: 4rem auto !important;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child table {
+  width: 100%;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child table tr {
+  display: flex;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child table img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child table h4{
+  font-family: var(--fontFamilySerif, "Asar", Georgia, "Times New Roman", Times, serif);
+  font-size: var(--fontSizeLarge, 24px);
+  margin-bottom: .25rem;
+  margin-left: 25px;
+  margin-top: 0;
+
+  /* padding-top: .5rem; */
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child table h5{
+  font-family: var(--body-font-family);
+  color: dimgray;
+  font-size: 14px;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child table td:first-child {
+  flex: 1;
+  max-width: max-content;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child table td:nth-child(2) {
+  flex: 2;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child table td:last-child {
+  display: flex;
+  flex: 1;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child table td:last-child a {
+  background-color: var(--background-color-hf);
+  margin: 0;
+  padding: 5px 10px;
+  line-height: 1;
+}
+
+.magazine-details .columns-wrapper .columns div > div:first-child table td:last-child img {
+  width: 25px;
+  height: auto;
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child p:first-child {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--background-color-hf);
+  font-weight: 600;
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child h4{
+  font-family:  "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child h5{
+  font-family:  "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child h5#download-download {
+  font-family:  "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child h5#download-download a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #202020;
+  color: #fff;
+  padding: 15px 30px;
+  max-width: fit-content;
+  line-height: normal;
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child h6{
+  font-family:  "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: dimgray;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child p:not(:first-child){
+display: flex;
+flex-direction: column;
+border-left: 5px solid var(--brandThird, #ebebeb);
+height: 90pt;
+padding: .5rem 1rem;
+cursor: pointer;
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child p:not(:first-child):hover {
+  background:#ffea00;
+    border-color: #202020;
+}
+
+
+.magazine-details .columns-wrapper .columns div > div:last-child p:not(:first-child) a{
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child p:not(:first-child) a:hover{
+  text-decoration: none;
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child p:not(:first-child) a:first-child {
+  font-size: var(--body-font-size-m);
+  color: var(--background-color-hf);
+}
+
+.magazine-details .columns-wrapper .columns div > div:last-child p:not(:first-child) a:last-child {
+  font-size: 12px;
+  color: dimgray;
+}
+
+.content-page-template .columns-wrapper .columns div {
+  align-items: start;
+  gap: 70px;
+}
+
+.content-page-template .columns-wrapper .columns div > div:first-child {
+flex: 3;
+}
+
+.content-page-template .columns-wrapper .columns div > div:first-child h1{
+  margin-top: 0;
+  }
+
+.content-page-template .columns-wrapper .columns div > div:last-child {
+  flex: 1;
+  }
+
+  .content-page-template .columns-wrapper .columns div > div:last-child p{
+    font-size: 14px;
+    }
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
